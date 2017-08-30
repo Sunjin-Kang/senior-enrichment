@@ -2,7 +2,7 @@
 var Sequelize = require('sequelize')
 var db = require('../index.js')
 
-let User = db.define('User', {
+let Planet = db.define('Planet', {
   name: {
     type: Sequelize.STRING,
     allowNull: false,
@@ -10,16 +10,12 @@ let User = db.define('User', {
       this.setDataValue('name', val.trim());
     }
   },
-  email: {
-    type: Sequelize.STRING,
-    allowNull: false,
-    validate: {
-      isEmail: true
+  image: {
+    type: Sequelize.VIRTUAL,
+    get: function() {
+      return `/api/planets/${this.id}/image`
     }
-  },
+  }
 
 });
-
-
-
-module.exports = User
+module.exports = Planet
