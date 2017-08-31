@@ -8,6 +8,8 @@ import Home from './Home';
 import Planets from './Planets';
 import Students from './Students';
 import SinglePlanet from './SinglePlanet';
+import SingleStudent from './SingleStudent';
+
 
 export default class Main extends Component {
 
@@ -32,9 +34,10 @@ export default class Main extends Component {
             <Route exact path="/planets" component={Planets} />
 
             <Route exact path='/students/new-student' />
-            <Route exact path='/students/:studentId' />
+            <Route exact path='/students/:studentId' component={SingleStudent}/>
             <Route exact path='/students' component={Students} />
             <Route exact path='/' component={Home} />
+
             <Redirect to='/' />
           </Switch>
         </main>

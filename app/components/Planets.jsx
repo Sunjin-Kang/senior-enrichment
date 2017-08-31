@@ -26,11 +26,9 @@ export default class Planets extends Component {
     return (
       <div className='container bg-dark'>
 
-
         <br/>
+
         <h2 className='text-center text-danger'>Planets</h2>
-
-
 
         <form className="form-inline my-2 my-lg-0">
           <div className='text-right'>
@@ -40,6 +38,7 @@ export default class Planets extends Component {
         </form>
 
         <hr/>
+
 
         <div className='row'>
           {

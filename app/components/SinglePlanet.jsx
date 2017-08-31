@@ -34,7 +34,7 @@ export default class SinglePlanet extends Component {
       return (
         <div className='container bg-dark'>
           <ul className='text-light'>
-            <h3>{thePlanet.name}</h3>
+            <h3 className='text-warning'>{thePlanet.name}</h3>
             {
               thePlanet.students.map(student => (
                 <li key={student.id}>
