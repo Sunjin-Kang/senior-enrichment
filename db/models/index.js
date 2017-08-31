@@ -14,7 +14,7 @@ Planet.hasMany(User, {
 	onDelete: 'cascade',
 	hooks: true
 });
-User.belongsTo(Planet, {foreignKey: 'PlanetId', as: 'planet_name'})
+User.belongsTo(Planet, {foreignKey: 'PlanetId', as: 'planet'})
 
 
 module.exports = {User, Planet}

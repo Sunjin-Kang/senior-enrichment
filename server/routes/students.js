@@ -8,7 +8,7 @@ const Planets = db.models.Planet;
 
 router.get('/', (req, res, next) => {
   Students.findAll({
-    include: {model: Planets, as: 'planet_name'},
+    include: {model: Planets, as: 'planet'},
     order: ['id']
   })
   .then((students) => {

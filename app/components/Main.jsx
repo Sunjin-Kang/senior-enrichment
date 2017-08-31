@@ -4,8 +4,10 @@ import { Route, Switch, Redirect } from 'react-router-dom';
 
 import store, {  } from '../store';
 import Navbar from './Navbar';
-import Planets from './Planets';
 import Home from './Home';
+import Planets from './Planets';
+import Students from './Students';
+import SinglePlanet from './SinglePlanet';
 
 export default class Main extends Component {
 
@@ -18,7 +20,7 @@ export default class Main extends Component {
   render() {
 
     return(
-      <div className='bg-danger'>
+      <div className='bg-light'>
         <Navbar />
 
 
@@ -26,13 +28,13 @@ export default class Main extends Component {
         <main>
           <Switch>
             <Route exact path='/planets/planet-id' />
-            <Route exact path='/planets/:planetId' />
+            <Route exact path='/planets/:planetId' component={SinglePlanet}/>
             <Route exact path="/planets" component={Planets} />
 
             <Route exact path='/students/new-student' />
             <Route exact path='/students/:studentId' />
-            <Route exact path='/students' />
-            <Route exact path='/' component={Home}/>
+            <Route exact path='/students' component={Students} />
+            <Route exact path='/' component={Home} />
             <Redirect to='/' />
           </Switch>
         </main>
