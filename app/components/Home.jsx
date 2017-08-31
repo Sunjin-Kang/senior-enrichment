@@ -1,25 +1,18 @@
 import React, { Component } from 'react';
 
-import Navbar from './Navbar';
-
-
 export default class Home extends Component {
-  constructor () {
-    super()
+  constructor(props) {
+    super(props)
+    this.state = {
+
+    }
   }
-
-  componentDidMount() {
-
-  }
-
-
 
   render() {
 
-    return(
+    return (
       <div>
-        <Navbar />
-
+        <image src='../../public/images/Black_Hole_Purple.jpg' width='100%' height='410px'/>
       </div>
     )
   }

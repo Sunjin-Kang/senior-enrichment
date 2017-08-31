@@ -10,7 +10,7 @@ const Planet = require('./planet')
 
 
 Planet.hasMany(User, {
-	as: 'student',
+	as: 'students',
 	onDelete: 'cascade',
 	hooks: true
 });

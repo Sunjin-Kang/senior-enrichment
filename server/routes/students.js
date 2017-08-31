@@ -2,8 +2,8 @@
 const router = require('express').Router();
 const db = require('../../db');
 
-const Students = db.models.user;
-const Planets = db.models.planet;
+const Students = db.models.User;
+const Planets = db.models.Planet;
 
 
 router.get('/', (req, res, next) => {

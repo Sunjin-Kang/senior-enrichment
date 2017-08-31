@@ -1,0 +1,22 @@
+.navbar-brand-center {
+  position: absolute;
+  left: 49%;
+  right: 51%;
+  display: block;
+}
+
+/* // body{
+
+//   #main {
+//     Home {
+//       Navbar{
+//         .navbar-brand-center {
+//           position: absolute;
+//           left: 50%;
+//           right: 50%;
+//           display: block;
+//         }
+//       }
+//     }
+//   }
+// } */
