@@ -11,17 +11,17 @@ export default function Navbar(props) {
           <img src="../../images/Veritas_red.svg" width="41" height="41" className="d-inline-block align-top" alt=""/>
         </NavLink>
 
-        <NavLink to='/' className="navbar-brand" href='#'>
+        <NavLink to='/' className="navbar-brand">
           <h3><font color='#a51c30'>Veritas</font></h3>
         </NavLink>
 
 
         <ul className="navbar-nav mr-auto">
-          <li className="nav-item active">
-            <NavLink to='/planets' className="nav-link" href="#"><h4>Planets</h4></NavLink>
+          <li className="nav-item">
+            <NavLink to='/planets' className="nav-link"><h4>Planets</h4></NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to='/students' className="nav-link" href="#"><h4>Students</h4></NavLink>
+            <NavLink to='/students' className="nav-link"><h4>Students</h4></NavLink>
           </li>
         </ul>
 

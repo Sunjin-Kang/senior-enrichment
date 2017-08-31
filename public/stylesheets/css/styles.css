@@ -2,21 +2,40 @@
   position: absolute;
   left: 49%;
   right: 51%;
-  display: block;
 }
 
-/* // body{
+body {
+  font-family: 'Merriweather Light', 'Times New Roman', serif;
+  font-weight: 300;
+  font-style: normal;
 
-//   #main {
-//     Home {
-//       Navbar{
-//         .navbar-brand-center {
-//           position: absolute;
-//           left: 50%;
-//           right: 50%;
-//           display: block;
-//         }
-//       }
-//     }
-//   }
-// } */
+}
+/* body {
+  font-family: 'Merriweather Sans Regular', Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+
+
+/*
+body {
+  #main {
+    Home {
+      Navbar {
+        .navbar-brand-center {
+          position: absolute;
+          left: 50%;
+          right: 50%;
+          display: block;
+        }
+      }
+    }
+  }
+} */
+
+/*
+        <img src='https://wallpapercave.com/wp/V0T5WT5.jpg' width='100%' height='100%' alt=''/>
+
+        <img src='https://wallpaperscraft.com/image/black_hole_space_stars_circles_universe_61036_3840x2160.jpg' width='100%' height='100%' alt=''/>
+*/

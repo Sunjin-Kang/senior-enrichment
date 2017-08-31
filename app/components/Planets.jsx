@@ -24,26 +24,35 @@ export default class Planets extends Component {
 
     const planets = this.state.planets
     return (
-      <div>
-        <h2>Planets</h2>
-        <div>
+      <div className='container bg-dark'>
 
+        <br/>
+        <h2 className='text-center text-light'>Planets</h2>
+        <br/>
+
+        <div>
+        </div>
+        <div className='row'>
           {
             planets.map(planet => (
-              <div className='col-lg-6' key={planet.id}>
+              <div className='col-lg-6 align-left' key={planet.id}>
+
                 <NavLink className='thumbnail' to={`/planets/${planet.id}`}>
-                  <img src={planet.image} />
-                  <div className='caption'>
-                    <h5>
-                      <small>{planet.students.length}</small>
+                  <img src={planet.image} className='img-responsive img-thumbnail bg-danger' height='360px'/>
+
+                    <h5 className='text-center'>
+                      <small className='text-info'>Enrollment: {planet.students.length}</small>
                     </h5>
-                  </div>
                 </NavLink>
+
+                <br/>
               </div>
             ))
           }
-
         </div>
+
+        <br/>
+
       </div>
     )
   }

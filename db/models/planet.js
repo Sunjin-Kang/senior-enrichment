@@ -11,10 +11,13 @@ let Planet = db.define('Planet', {
     }
   },
   image: {
-    type: Sequelize.VIRTUAL,
-    get: function() {
-      return `/api/planets/${this.id}/image`
-    }
+    type: Sequelize.STRING,
+    // defaultValue: function () {
+    //   return getRandomImage();
+    // },
+    // get: function() {
+    //   return `/api/planets/${this.id}/image`
+    // }
   }
 
 });

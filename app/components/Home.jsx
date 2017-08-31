@@ -12,7 +12,7 @@ export default class Home extends Component {
 
     return (
       <div>
-        <image src='../../public/images/Black_Hole_Purple.jpg' width='100%' height='410px'/>
+        <img src='https://wallpapercave.com/wp/V0T5WT5.jpg' width='100%' height='100%' alt=''/>
       </div>
     )
   }
