@@ -4,26 +4,26 @@ import axios from 'axios';
 
 //action types
 
-const GET_PLANETS = 'GET_PLANETS';
+const GET_STUDENTS = 'GET_STUDENTS';
 
 //action creators
 
-export function getPlanets (planets) {
+export function getStudents (students) {
   const action = {
-    type: GET_PLANETS, planets
+    type: GET_STUDENTS, students
   };
   return action;
 }
 
 //thunks
 
-export function fetchPlanets() {
+export function fetchStudents() {
   return function thunk(dispatch) {
-    return axios.get('/api/planets')
+    return axios.get('/api/students')
       .then(res => res.data)
-      .then(planets => {
-        const action = getPlanets(planets)
-        dispatch(action);
+      .then(students => {
+        const action = getStudents(students)
+        dispatch(action)
       })
   }
 }
@@ -33,10 +33,9 @@ export function fetchPlanets() {
 export default function reducer (state = [], action) {
 
   switch (action.type) {
-    case GET_PLANETS:
-      return action.planets
+    case GET_STUDENTS:
+      return action.students
     default:
       return state;
-
   }
 }

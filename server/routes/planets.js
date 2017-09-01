@@ -21,16 +21,16 @@ router.get('/', (req, res, next) => {
   .catch(next)
 })
 
-router.get('/:planetId', (req, res, next) => {
-  Planets.findById(req.params.planetId)
-  .then((planet) => {
-    if (!planet) {
-      res.status(404)
-    }
-    res.status(200).json(planet)
-  })
-  .catch(next)
-})
+// router.get('/:planetId', (req, res, next) => {
+//   Planets.findById(req.params.planetId)
+//   .then((planet) => {
+//     if (!planet) {
+//       res.status(404)
+//     }
+//     res.status(200).json(planet)
+//   })
+//   .catch(next)
+// })
 
 router.post('/', (req, res, next) => {
   Planets.create(req.body)

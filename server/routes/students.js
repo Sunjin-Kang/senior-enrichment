@@ -20,16 +20,16 @@ router.get('/', (req, res, next) => {
   .catch(next)
 })
 
-router.get('/:studentId', (req, res, next) => {
-  Students.findById(req.params.studentId)
-  .then((student) => {
-    if (!student) {
-      res.status(404)
-    }
-    res.status(200).json(student)
-  })
-  .catch(next)
-})
+// router.get('/:studentId', (req, res, next) => {
+//   Students.findById(req.params.studentId)
+//   .then((student) => {
+//     if (!student) {
+//       res.status(404)
+//     }
+//     res.status(200).json(student)
+//   })
+//   .catch(next)
+// })
 
 
 router.post('/', (req, res, next) => {
